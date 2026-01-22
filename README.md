@@ -31,10 +31,15 @@ require a backend server.
 
 .
 ├─ index.html # Main application layout
+
 ├─ css
+
 │ └─ style.css # Styling and responsive layout
+
 ├─ js
+
 │ └─ app.js # Core logic, API calls, UI interactions
+
 └─ README.md # Project documentation
 
 
@@ -115,3 +120,4 @@ Customization
 
 This project is created for educational and internship purposes.
 Please review NewsAPI’s terms of service before using it in production
+
