@@ -1,9 +1,7 @@
 // DailyStream - News Aggregator
-// Uses NewsAPI.org. Add your API key below.
-// Beginner-friendly, modern ES6+ code with comments.
 
-const API_KEY = "9c4d0c6ed2e442dd81814039dee7f776"; // <-- Replace with your key
-const COUNTRY = "us"; // Default country for top headlines
+const API_KEY = "9c4d0c6ed2e442dd81814039dee7f776"; 
+const COUNTRY = "us"; 
 const BASE_URL = "https://newsapi.org/v2";
 
 // DOM Elements
@@ -181,11 +179,6 @@ function init() {
   fetchNews();
 }
 
-// Warn if API key not set
-if (!API_KEY || API_KEY === "YOUR_NEWSAPI_KEY_HERE") {
-  show(errorAlert);
-  errorAlert.textContent = "Please set your NewsAPI API key in js/app.js to load live news.";
-}
-
 // Start app
 init();
+
