@@ -64,60 +64,44 @@ This is a static web application. No build step is required.
 
 with your actual API key.
 Usage
-
-    Select a news category from the navigation bar.
-
-    Use the search bar to find articles by keyword.
-
-    Click Read More to open the full article on the original source website.
-
-    Scroll through cards to browse multiple articles.
+Select a news category from the navigation bar.
+Use the search bar to find articles by keyword.
+Click Read More to open the full article on the original source website.
+Scroll through cards to browse multiple articles.
 
 ## Notes
 
-    This project directly calls the NewsAPI from the browser for simplicity.
-
-    For production use, API requests should be routed through a backend to avoid
-    exposing API keys.
-
-    The default country for headlines can be changed in js/app.js by modifying
-    the COUNTRY constant.
-
-    The project was intentionally kept framework-free to strengthen core
-    JavaScript and DOM manipulation skills.
+This project directly calls the NewsAPI from the browser for simplicity.
+For production use, API requests should be routed through a backend to avoid
+exposing API keys.
+The default country for headlines can be changed in js/app.js by modifying
+the COUNTRY constant.
+The project was intentionally kept framework-free to strengthen core
+JavaScript and DOM manipulation skills.
 
 ## Deployment
 
 This is a static site and can be hosted on any static hosting platform.
 GitHub Pages
+Push the project to a GitHub repository.
+Enable GitHub Pages from repository settings.
+Set the source branch to main and folder to /root.
 
-    Push the project to a GitHub repository.
-
-    Enable GitHub Pages from repository settings.
-
-    Set the source branch to main and folder to /root.
-
-Other Hosting Platforms
-
-    Netlify
-
-    Vercel
-
-    Any static web server
-
+## Other Hosting Platforms
+Netlify
+Vercel
+Any static web server
 No additional configuration is required.
-Customization
 
-    Update colors, layout, and typography in css/style.css.
-
-    Modify categories by editing the data-category attributes in index.html.
-
-    Adjust article summary length using the truncate() helper in js/app.js.
-
-    Extend features such as pagination or country selection if needed.
+## Customization
+Update colors, layout, and typography in css/style.css.
+Modify categories by editing the data-category attributes in index.html.
+Adjust article summary length using the truncate() helper in js/app.js.
+Extend features such as pagination or country selection if needed.
 
 ## License
 
 This project is created for educational and internship purposes.
 Please review NewsAPI’s terms of service before using it in production
+
 
