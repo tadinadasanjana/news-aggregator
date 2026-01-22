@@ -1,0 +1,96 @@
+/* Base Typography and Layout */
+:root {
+  --bg: #f7f9fc;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --primary-600: #1d4ed8;
+  --ring: rgba(37, 99, 235, 0.25);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* Header */
+.navbar .navbar-brand span { letter-spacing: 0.2px; }
+.navbar .nav-link { color: var(--text); opacity: 0.9; }
+.navbar .nav-link:hover { color: var(--primary); }
+.navbar .nav-link.active { color: var(--primary); font-weight: 600; }
+.navbar-toggler { border: 1px solid rgba(0,0,0,0.1); }
+.navbar-toggler:focus { box-shadow: 0 0 0 4px var(--ring); }
+/* Provide a hamburger icon without Bootstrap JS bundle */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(31,41,55,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Search */
+#searchInput {
+  min-width: 240px;
+  border-radius: 10px;
+}
+#searchInput:focus {
+  box-shadow: 0 0 0 4px var(--ring);
+  border-color: var(--primary);
+}
+#searchBtn {
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+}
+#searchBtn:hover { background: var(--primary-600); }
+
+/* Cards */
+.card.news-card {
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  background: var(--card-bg);
+}
+.card.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(2, 6, 23, 0.08);
+}
+.card-img-top { height: 180px; object-fit: cover; }
+.card-title { font-weight: 700; font-size: 1.05rem; }
+.card-text { color: var(--muted); }
+.badge-source {
+  background: #eef2ff;
+  color: #4338ca;
+  font-weight: 600;
+}
+
+.btn-read {
+  border-radius: 10px;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.btn-read:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.25);
+}
+
+/* Loader */
+#loader .spinner-border { width: 3rem; height: 3rem; }
+
+/* Footer */
+footer { position: sticky; top: 100%; }
+
+/* Utilities */
+.z-3 { z-index: 3; }
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  #searchInput { min-width: 180px; }
+}
